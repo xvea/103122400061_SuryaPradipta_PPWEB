@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form Pendaftaran Mahasiswa</h1>
+
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="nama">Nama Lengkap</label>
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          placeholder="Masukkan nama lengkap"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="contoh@email.com"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Minimal 8 karakter"
+          required
+          minlength="8"
+        />
+      </div>
+
+      <div class="form-group radio-group">
+        <label>Jenis Kelamin</label>
+        <label>
+          <input type="radio" name="jenis_kelamin" value="Laki-laki" required />
+          Laki-laki
+        </label>
+        <label>
+          <input type="radio" name="jenis_kelamin" value="Perempuan" />
+          Perempuan
+        </label>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <label>Hobi</label>
+        <label>
+          <input type="checkbox" name="hobi" value="Membaca" /> Membaca
+        </label>
+        <label>
+          <input type="checkbox" name="hobi" value="Olahraga" /> Olahraga
+        </label>
+        <label>
+          <input type="checkbox" name="hobi" value="Coding" /> Coding
+        </label>
+        <label>
+          <input type="checkbox" name="hobi" value="Musik" /> Musik
+        </label>
+        <label>
+          <input type="checkbox" name="hobi" value="Nganggur" /> Nganggur
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="pendidikan">Pendidikan Terakhir</label>
+        <select id="pendidikan" name="pendidikan" required>
+          <option value="">-- Pilih Pendidikan --</option>
+          <option value="SMA/SMK">SMA / SMK</option>
+          <option value="D3">Diploma 3 (D3)</option>
+          <option value="S1">Sarjana (S1)</option>
+          <option value="S2">Magister (S2)</option>
+          <option value="S2">Malas Sekolaj</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="kritik_saran">Kritik dan Saran</label>
+        <textarea
+          id="kritik_saran"
+          name="kritik_saran"
+          rows="5"
+          placeholder="Tulis kritik atau saran Anda di sini..."
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Daftar</button>
+      </div>
+    </form>
+  </body>
+</html>
